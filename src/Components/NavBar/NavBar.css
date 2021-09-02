@@ -1,0 +1,84 @@
+
+
+.nav-container {
+    background-color: rgb(30, 6, 68);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition:width .5s ease;
+}
+
+.nav-container.expanded{
+    width: 200px;
+}
+.nav-container.collapsed{
+    width: 60px;
+}
+.nav-container.collapsed .navbar-item{
+    justify-content: center;
+    padding-left: 0px;
+}
+.nav-container.expanded .navbar-item{
+    justify-content: start;
+    padding-left: 20px;
+
+}
+
+.nav-container.collapsed .nav-title{
+    display: none;
+}
+.nav-container.expanded .nav-title{
+    display: inline-block;
+}
+
+.logo-parent {
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+    background-color: rgb(50, 16, 105);
+    color: white;
+}
+
+.nav-menu-parent{
+    padding-top: 24px;
+    width: 100%;
+    background: rgb(25, 10, 53);
+    color: rgb(241, 241, 241);
+    flex-grow: 1;
+ 
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-item:hover{
+    background: rgb(39, 19, 73);
+}
+
+.navbar-item.active {
+    background: rgb(112, 71, 190);
+}
+
+.nav-title {
+    margin-left: 8px;
+}
+
+
+.nav-menu-parent a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bars {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 24px;
+}
